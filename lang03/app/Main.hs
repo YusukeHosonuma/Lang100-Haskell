@@ -1,10 +1,9 @@
 module Main where
 
-import Lib
 import Data.List
 
 f :: String -> String
-f = concat . map (show . length) . words
+f = concatMap (show . length) . words
 
 main :: IO ()
 main = 
